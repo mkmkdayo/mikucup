@@ -222,6 +222,9 @@ with st.sidebar:
     if uploaded_file and st.button("파일 적용하여 이어하기"):
         if load_game_state(uploaded_file): st.success("게임을 불러왔습니다!"); st.rerun()
 
+    st.divider()
+    st.link_button("🐞 버그 제보 및 건의함", "https://forms.gle/rDxwu5rUzYuGMCJM7")
+
 # --- 메인 화면 로직 ---
 if not st.session_state.game_started:
     st.title("🎵 유튜브 플레이리스트 이상형 월드컵")
